@@ -22,6 +22,8 @@ public class ApiConsumer {
 		refConfig.setGroup("dubbo");
 		refConfig.setVersion("0.0.1");
 		
+		refConfig.setLoadbalance("firstLoadBalance");
+		
 		GreetingService service = refConfig.get();
 		
 		RpcContext.getContext().setAttachment("company", "raglond");

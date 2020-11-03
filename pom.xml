@@ -32,6 +32,12 @@
 				<artifactId>dubbo-example-sdk</artifactId>
 				<version>0.0.2-SNAPSHOT</version>
 			</dependency>
+			
+			<dependency>
+				<groupId>com.github.ralgond</groupId>
+				<artifactId>dubbo-example-loadbalance</artifactId>
+				<version>0.0.2-SNAPSHOT</version>
+			</dependency>
 
 
 		</dependencies>
@@ -55,5 +61,6 @@
 		<module>dubbo-example-sdk</module>
 		<module>dubbo-example-consumer</module>
 		<module>dubbo-example-provider</module>
+		<module>dubbo-example-loadbalance</module>
 	</modules>
 </project>
