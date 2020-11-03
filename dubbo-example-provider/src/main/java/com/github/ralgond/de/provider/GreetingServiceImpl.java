@@ -2,7 +2,7 @@ package com.github.ralgond.de.provider;
 
 import org.apache.dubbo.rpc.RpcContext;
 
-import com.github.raglond.de.sdk.GreetingService;
+import com.github.ralgond.de.sdk.GreetingService;
 
 public class GreetingServiceImpl implements GreetingService {
 

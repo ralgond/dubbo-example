@@ -5,7 +5,7 @@ import org.apache.dubbo.config.ReferenceConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.rpc.RpcContext;
 
-import com.github.raglond.de.sdk.GreetingService;
+import com.github.ralgond.de.sdk.GreetingService;
 
 public class ApiConsumer {
 

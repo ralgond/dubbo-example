@@ -6,7 +6,7 @@ import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
 
-import com.github.raglond.de.sdk.GreetingService;
+import com.github.ralgond.de.sdk.GreetingService;
 
 public class ApiProvider {
 	public static void main(String args[]) {
