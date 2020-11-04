@@ -1,5 +1,7 @@
 package com.github.ralgond.de.consumer;
 
+import java.io.IOException;
+
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.ReferenceConfig;
 import org.apache.dubbo.config.RegistryConfig;
@@ -22,12 +24,19 @@ public class ApiConsumer {
 		refConfig.setGroup("dubbo");
 		refConfig.setVersion("0.0.1");
 		
-		refConfig.setLoadbalance("firstLoadBalance");
+		refConfig.setLoadbalance("lastLoadBalance");
+		
+		refConfig.setCheck(false);
 		
 		GreetingService service = refConfig.get();
 		
 		RpcContext.getContext().setAttachment("company", "raglond");
 		
 		System.out.println(service.sayHello("world"));
+		try {
+			System.in.read();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }

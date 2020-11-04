@@ -1,1 +1,2 @@
 firstLoadBalance=com.github.ralgond.de.loadbalance.FirstLoadBalance
+lastLoadBalance=com.github.ralgond.de.loadbalance.LastLoadBalance
