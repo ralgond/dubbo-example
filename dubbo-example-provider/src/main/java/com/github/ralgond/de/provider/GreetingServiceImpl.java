@@ -11,4 +11,14 @@ public class GreetingServiceImpl implements GreetingService {
 		return "Hello "+name+" "+RpcContext.getContext().getAttachment("company");
 	}
 
+	@Override
+	public String sleepMs(long ms) {
+		try {
+			Thread.sleep(ms);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return "sleep done";
+	}
+
 }
