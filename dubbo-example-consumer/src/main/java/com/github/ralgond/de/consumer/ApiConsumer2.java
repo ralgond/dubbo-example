@@ -1,5 +1,7 @@
 package com.github.ralgond.de.consumer;
 
+import java.io.IOException;
+
 import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -15,5 +17,11 @@ public class ApiConsumer2 {
 		RpcContext.getContext().setAttachment("company", "raglond");
 		
 		System.out.println(service.sayHello("world"));
+		
+		try {
+			System.in.read();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
