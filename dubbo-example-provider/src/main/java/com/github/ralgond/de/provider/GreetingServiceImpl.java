@@ -21,4 +21,9 @@ public class GreetingServiceImpl implements GreetingService {
 		return "sleep done";
 	}
 
+	@Override
+	public String throwRuntimeException() {
+		throw new RuntimeException("GreetingServiceImpl.throwRuntimeException");
+	}
+
 }
