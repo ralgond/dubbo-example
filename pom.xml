@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.ralgond</groupId>
 	<artifactId>dubbo-example</artifactId>
-	<version>0.0.6-SNAPSHOT</version>
+	<version>0.0.7-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
 		<dubbo.version>2.7.1</dubbo.version>
-		<dubbo.example.version>0.0.6-SNAPSHOT</dubbo.example.version>
+		<dubbo.example.version>0.0.7-SNAPSHOT</dubbo.example.version>
 		<spring-boot.version>2.3.0.RELEASE</spring-boot.version>
 	</properties>
 
