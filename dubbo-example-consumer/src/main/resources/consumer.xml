@@ -14,6 +14,6 @@
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
     <dubbo:reference id="greetingService" interface="com.github.ralgond.de.sdk.GreetingService" group="dubbo" version="0.0.1"
-    	timeout="30000" connections="1"/>
+    	timeout="30000" connections="1" check="false"/>
 
 </beans>
